@@ -1,0 +1,51 @@
+body {
+    padding-top: 100px;
+}
+
+span {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+}
+
+
+.row {
+    background: #f9f6f6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    height: 50px;
+    margin: 8px auto;
+    padding: 0;
+    width: 100%;
+}
+
+
+.row p, .row span {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.col-xs-6 p {
+    color: #000;
+    font-size: 20px;
+}
+
+.counters {
+    text-align: center;
+}
+.counters {
+    text-align: center;
+}
+
+.counters span {
+    background: #ffa800;
+    font-size: 20px;
+    width: 40px;
+}
+
+.counters span.count {
+    background: #fff;
+}
+

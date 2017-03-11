@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="ExerciseApp">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+      
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <h2>My Workout Log</h2>
+      </div>
+    </nav>
+    
+    <div class="main" ng-controller="MainController">
+        <div class="container">
+
+        
+  
+        <div class="row" ng-repeat='e in exercises'>
+          <div class="exercise-icon col-xs-2"> </div>
+            
+          <div class="col-xs-6">
+            <p class="exercise-name">{{e.name}} </p>
+          </div>
+          
+          <div class="col-xs-4 counters">
+            <span class="decrease"ng-click='decrease($index)'>-</span><span class="count">{{e.count}}  </span><span class="increase"ng-click='increase($index)'>+</span>
+          </div>
+        </div>
+         
+
+        </div>
+    </div>
+      
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>  
+     
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+    </body>
+</html>
